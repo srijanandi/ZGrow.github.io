@@ -10,24 +10,29 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         .nav-item{
         padding: 3px;
         margin-left: 15px;
       }
         .topnav a:hover {
-  border-bottom: 3px solid#b11017;
-  background-color: #b11017;
-  color: white;
-  border-radius:3% ;
-  border-color: #b11017;
-}
+        
+        background-color: #b11017;
+        color: white;
+        border-radius: 25px ;
+        box-shadow: 0px 3px rgb(177, 173, 173);
+        
+      }
+      
+
 .topnav a.active {
-  background-color : #b11017;
+  background-color : #972222;
   color: white;
   border-radius:50px ;
-  border-color: #b11017;
+  border-color: #473c3d;
 }
 .nav-right{
     margin-right: 100px;
@@ -51,7 +56,22 @@
     margin-top: 12%;
     z-index: -1;
 }
-
+.nav-item{
+  width: 100px;
+  text-align: center;
+  
+}
+.long{
+  width: 130px;
+}
+.text-block {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgb(189, 78, 133);
+  padding-left: 20px;
+  padding-right: 20px;
+}
     </style>
 </head>
 <body>
@@ -63,67 +83,97 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav me-auto ml-auto mb-2 mb-lg-0 nav-right">
           <li class="nav-item">
-            <a class="nav-link" href="#h1">Home</a>
+            <a class="nav-link" style="color: black;"  href="#h1">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#abt">About US</a>
+            <a class="nav-link" style="color: black;" href="#abt">About US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#ser">Services</a>
+            <a class="nav-link" style="color: black;" href="#ser">Services</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#h1">Contact Us</a>
+          <li class="nav-item long">
+            <a class="nav-link" style="color: black;" href="#h1">Contact Us</a>
           </li>    
         </ul>
       </div>  
     </nav>
 <div class="container">
- <div class="jumbotron" id="h1">
+ <div class="jumbotron" style="background-color: #F50057; max-height: 400px;" id="h1">
     <h1 class="display-4" >Heading Goes Here</h1>
     <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
         galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
         but</p>
+
+      <div class="row">
+          <img src="./undraw_building_websites_i78t (1) 1.png" style="display: block; margin-left: auto; margin-right: auto;" alt="">
+      </div>
+
  </div>
-<div id="abt" style="margin-top: 5%; min-height: 250px;">
+
+ <!-- About us section -->
+<div id="abt" style=" min-height: 250px; margin-top: 25%;">
     <div class="row" style="min-height: 250px;">
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-            <h1 class="display-4" style="font-weight: 700; text-align: center;">ABOUT US</h1>
-            <p class="lead" style=" color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            <img src="./Ellipse 14.png" style="margin-top: 5%; z-index: -1; width: 33%;" alt="">
+            <div class=" text-block">
+              <h1 class="display-4" style="font-weight: 700; text-align: center; margin-top: 15%; position: relative; top: 6%;">About Us</h1>
+              <p class="lead" style=" padding: 20px; font-size: medium; color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
                 galley of type and scrambled it to make a type specimen book.</p>
+            </div>
         </div>
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-            
+            <img src="./undraw_Web_search_re_efla 1.png" style="width: 100%;" alt="">
         </div>
     </div>
 </div>
+<!-- about us ends -->
 
+<!-- services section -->
 <div id="ser" style="margin-top: 5%; min-height: 250px;">
     <div class="row" style="min-height: 200px;">
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-            
+            <img src="undraw_reading_list_4boi 1.png" style="width: 100%;" alt="">
         </div>
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 bg-light">
-            <h1 class="display-4" style="font-weight: 700; text-align: center;">SERVICES</h1>
+            <h1 class="display-4" style="font-weight: 700; text-align: center; margin-top: 5%;">Services</h1>
             <div class="row" style="margin-top: 3%; font-size: 15px;">
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6" style="padding-left: 5%;">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6" style="padding-left: 5%; font-family: 'Open-Sans';">
                     <i class="far fa-circle"></i> Service Name
                 </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6" style="padding-left: 5%;">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6" style=" font-family: 'Open-Sans'; padding-left: 5%;">
                     <i class="far fa-circle"></i> Service Name
                 </div>
         </div>
         <div class="row" style="margin-top: 3%;font-size: 15px;">
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6"style="padding-left: 10%;">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6"style=" font-family: 'Open-Sans'; padding-left: 10%;">
                 <i class="far fa-circle"></i> Service Name
             </div>
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6" style="padding-left: 10%;">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6" style=" font-family: 'Open-Sans'; padding-left: 10%;">
                 <i class="far fa-circle"></i> Service Name
             </div>
     </div>
     </div>
+  </div>
+<!-- services section ends -->
+
+<!-- contact us section -->
+<div id="contact us" style="background-color: white; margin-top: 5%; min-height: 250px;">
+  <div class="row" style="min-height: 200px;">
+    
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+        
+      <h1 class="display-4" style="font-weight: 700; text-align: center; margin-top: 9%;">Contact Us</h1>
+    </div>
+
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+        <img src="./undraw_Personal_text_re_vqj3 1.png" style="width: 100%;" alt="">
+    </div>
+
+  </div>
 </div>
+<!-- contact us ends -->
 
 </div>
 </body>
